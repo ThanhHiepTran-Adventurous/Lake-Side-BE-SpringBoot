@@ -33,7 +33,8 @@ public class CorsConfig {
                 HttpMethod.GET.name(),
                 HttpMethod.POST.name(),
                 HttpMethod.PUT.name(),
-                HttpMethod.DELETE.name()));
+                HttpMethod.DELETE.name(),
+                HttpMethod.OPTIONS.name()));
         config.setMaxAge(MAX_AGE);
         source.registerCorsConfiguration("/**", config);
 
